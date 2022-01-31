@@ -18,16 +18,20 @@
     float: left;
     width: 32%;
 }
+/* immagine */
 .img{
    width: 100%;
 }
+
 /* richiamo delle classi float */
 .right{
     float: right;
 }
+
 .center{
    margin: 0 2%;
 }
+
 .heart{
     content:"\2764";
 }
@@ -36,11 +40,36 @@
     position: relative;
 }
 
-}
-.percentuale{
+.discount, .green{
     position: absolute;
     left: 0;
-    bottom: 20px;
+    bottom: 50px;
+    background-color:#eb0037;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.green{
+    left: 45px;
+    background-color: #168e66;
+}
+/* lavoro sulle p */
+.name{
+    font-size: 14px;
+}
+
+.style-type{
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.price{
+    color: red;
+}
+p > span{
+    text-decoration: line-through;
+    color: black;
 }
 
 
