@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display:table;
+}
+/* incomincio ad impostare un contenitore con delle misure che andrò a togliere */
+.container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.float{
+    float: left;
+    width: 32%;
+    margin-bottom: 20px;
+}
+/* regola per utilizzare absolute */
+.container-float{
+    position: relative;
+}
+
+/* immagine */
+.img{
+   width: 100%;
+}
+
+/* richiamo delle classi float */
+.right{
+    float: right;
+}
+
+.center{
+   margin-left: 2%;
+   margin-right: 2%;
+}
+
+/* hover */
+.img-hover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+ /* trovata soluzione in internet     */
+    display: none;    
+}
+
+.float:hover .img-hover{
+ /* trovata soluzione in internet     */    
+    display: inline-block;
+}
+
+.float:hover .heart{
+    color: red;
+}
+
+/* lavoro span  */
+.discount, .green{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    background-color:#eb0037;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.green{
+    left: 45px;
+    background-color: #168e66;
+}
+
+.heart::after{
+    content:"\2764";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 5px;
+    background-color: white;
+}
+
+.no-discount{
+    left: 0;
+}
+
+
+/* lavoro sulle p */
+.name{
+    font-size: 14px;
+}
+
+.style-type{
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 15px;
+}
+
+.price{
+    color: red;
+}
+p > span{
+    text-decoration: line-through;
+    color: black;
+}
