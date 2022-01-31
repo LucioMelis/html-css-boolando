@@ -28,6 +28,20 @@
 .center{
    margin: 0 2%;
 }
+.heart{
+    content:"\2764";
+}
+
+.container-float{
+    position: relative;
+}
+
+}
+.percentuale{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
 
 
 
