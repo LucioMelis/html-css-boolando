@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: calibri;
 }
 .clearfix::after{
     content: "";
@@ -12,12 +13,18 @@
 .container{
     width: 80%;
     margin: 20px auto;
-    border: 2px dashed black;
 }
+
 .float{
     float: left;
     width: 32%;
+    margin-bottom: 20px;
 }
+/* regola per utilizzare absolute */
+.container-float{
+    position: relative;
+}
+
 /* immagine */
 .img{
    width: 100%;
@@ -29,13 +36,30 @@
 }
 
 .center{
-   margin: 0 2%;
+   margin-left: 2%;
+   margin-right: 2%;
 }
 
-.container-float{
-    position: relative;
+/* hover */
+.img-hover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+ /* trovata soluzione in internet     */
+    display: none;    
 }
 
+.float:hover .img-hover{
+ /* trovata soluzione in internet     */    
+    display: inline-block;
+}
+
+.float:hover .heart{
+    color: red;
+}
+
+/* lavoro span  */
 .discount, .green{
     position: absolute;
     left: 0;
@@ -50,6 +74,21 @@
     left: 45px;
     background-color: #168e66;
 }
+
+.heart::after{
+    content:"\2764";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 5px;
+    background-color: white;
+}
+
+.no-discount{
+    left: 0;
+}
+
+
 /* lavoro sulle p */
 .name{
     font-size: 14px;
@@ -58,6 +97,7 @@
 .style-type{
     text-transform: uppercase;
     font-weight:bold;
+    font-size: 15px;
 }
 
 .price{
@@ -67,16 +107,3 @@ p > span{
     text-decoration: line-through;
     color: black;
 }
-
-.heart::after{
-    content:"\2764";
-    position: absolute;
-    right: 0;
-    top: 20px;
-    padding: 5px;
-    background-color: white;
-}    
-
-
-
-
