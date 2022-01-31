@@ -32,10 +32,6 @@
    margin: 0 2%;
 }
 
-.heart{
-    content:"\2764";
-}
-
 .container-float{
     position: relative;
 }
@@ -71,6 +67,14 @@ p > span{
     text-decoration: line-through;
     color: black;
 }
+
+.heart::after{
+    content:"\2764";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 5px;
+    background-color: white;
 
 
 
